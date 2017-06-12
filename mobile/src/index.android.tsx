@@ -1,6 +1,7 @@
 import { AppRegistry, StyleSheet, Text, View } from 'react-native'
 import PropTypes from 'prop-types'
 import React from 'react'
+import TestComponent from './components/TestComponent'
 
 export interface Props extends PropTypes { }
 export interface State { }
@@ -29,7 +30,7 @@ export default class App extends React.Component<Props, State> {
     return (
       <View style={styles.container}>
         <Text style={styles.welcome}>
-          Welcome to React Native! (in TypeScript)
+          Welcome to React Native with Android (in TypeScript)
         </Text>
         <Text style={styles.instructions}>
           To get started, edit src/index.android.tsx
@@ -38,6 +39,8 @@ export default class App extends React.Component<Props, State> {
           Press Cmd+R to reload,{'\n'}
           Cmd+D or shake for dev menu
         </Text>
+        <TestComponent/>
+
       </View>
     )
   }
